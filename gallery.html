@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Story Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.png" alt="Business Logo" class="logo">
+            </a>
+        </div>
+        <div class="button-container">
+            <a href="index.html" class="gradient-button">Bookings</a>
+            <a href="gallery.html" class="gradient-button">Gallery</a>
+            <a href="services.html" class="gradient-button">Services</a>
+            <a href="contact.html" class="gradient-button">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Filter Buttons -->
+        <section id="filter-buttons">
+            <div class="button-container">
+                <button class="gradient-button" onclick="showCategory('all')">Show all</button>
+                <button class="gradient-button" onclick="showCategory('massages')">Massages</button>
+                <button class="gradient-button" onclick="showCategory('waxing')">Waxing</button>
+                <button class="gradient-button" onclick="showCategory('lashes')">Lashes</button>
+                <button class="gradient-button" onclick="showCategory('products')">Products</button>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="portfolio">
+            <div class="category-container massages-container" data-category="massages">
+                <h3 class="category-title">Massages:</h3>
+                <div class="gallery massages-gallery">
+                    <img src="media/massages/massage1.png" alt="Massage 1" class="gallery-item">
+                    <img src="media/massages/massage2.png" alt="Massage 2" class="gallery-item">
+                    <img src="media/massages/massage3.png" alt="Massage 3" class="gallery-item">
+                </div>
+            </div>
+            <div class="category-container waxing-container" data-category="waxing">
+                <h3 class="category-title">Waxing:</h3>
+                <div class="gallery waxing-gallery">
+                    <img src="media/waxing/waxing1.png" alt="Waxing 1" class="gallery-item">
+                </div>
+            </div>
+            <div class="category-container lashes-container" data-category="lashes">
+                <h3 class="category-title">Lashes:</h3>
+                <div class="gallery lashes-gallery">
+                    <img src="media/lashes/lash1.png" alt="Lash 1" class="gallery-item">
+                </div>
+            </div>
+            <div class="category-container products-container" data-category="products">
+                <h3 class="category-title">Products we use:</h3>
+                <div class="gallery products-gallery">
+                    <img src="media/products/product1.png" alt="Product 1" class="gallery-item">
+                    <img src="media/products/product2.png" alt="Product 2" class="gallery-item">
+                    <img src="media/products/product3.png" alt="Product 3" class="gallery-item">
+                    <img src="media/products/product4.png" alt="Product 4" class="gallery-item">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <button class="close">&times;</button>
+        <button class="prev">&#10094;</button>
+        <img src="" alt="Fullscreen Image">
+        <button class="next">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Story Beauty. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

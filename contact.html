@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Story Beauty</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.png" alt="Business Logo" class="logo">
+            </a>
+        </div>
+        <div class="button-container">
+            <a href="index.html" class="gradient-button">Bookings</a>
+            <a href="gallery.html" class="gradient-button">Gallery</a>
+            <a href="services.html" class="gradient-button">Services</a>
+            <a href="contact.html" class="gradient-button">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-form-section">
+            <h3 class="curvymax-font">Questions?</h3>
+            <p class="play-font">Use the form below to get in touch !</p>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/xvggernj" method="POST" id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </li>
+                    <li>
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </li>
+                    <li>
+                        <label for="comment">Comment:</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                    </li>
+                </ul>
+                <button type="submit" class="gradient-button">Send Message</button>
+            </form>            
+        </section>
+    </main>
+
+    <main>
+        <section id="social-media">
+            <h3 class="curvymax-font">Stay Connected!</h3>
+            <p class="play-font">Alternatively, use the socials below to get in touch !</p>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/profile.php?id=61571671768852" target="_blank">
+                    <img src="media/facebook.png" alt="Facebook" class="social-button">
+                </a>
+                <a href="https://www.instagram.com/__storybeauty__/" target="_blank">
+                    <img src="media/instagram.png" alt="Instagram" class="social-button">
+                </a>
+                <a href="https://wa.me/447931155573" target="_blank">
+                    <img src="media/whatsapp.png" alt="WhatsApp" class="social-button">
+                </a>
+            </div>
+        </section>        
+    </main>
+        
+    <footer>
+        <p>&copy; 2025 Story Beauty. All rights reserved.</p>
+    </footer>
+</body>
+</html>
