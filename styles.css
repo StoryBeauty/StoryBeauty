@@ -1096,6 +1096,11 @@ main {
         margin: 0;
         padding: 0;
         overflow-x: hidden; /* Prevent horizontal scrolling */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Full-screen height */
     }
 
     header {
@@ -1103,32 +1108,36 @@ main {
         flex-direction: column;
         align-items: center;
         padding: 10px;
-    }
-
-    .logo-container {
-        text-align: center;
         width: 100%;
     }
 
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
     .logo {
-        max-width: 180px; /* Adjust logo size for mobile */
+        max-width: 250px; /* Increase logo size */
         height: auto;
     }
 
     .button-container {
         display: flex;
-        flex-wrap: wrap; /* Ensure buttons stay in one row and wrap if necessary */
+        flex-wrap: wrap;
         justify-content: center; /* Center buttons horizontally */
-        gap: 5px;
-        margin-top: 10px;
+        gap: 10px;
+        margin-top: 20px;
         width: 100%;
     }
 
     .gradient-button {
         flex: 1; /* Make buttons responsive */
-        max-width: 150px; /* Limit width per button */
-        padding: 8px 12px;
-        font-size: 14px;
+        max-width: 180px; /* Limit width per button */
+        padding: 12px 16px;
+        font-size: 16px;
         text-align: center;
     }
 
@@ -1140,6 +1149,10 @@ main {
         margin: 0 auto;
         min-height: 100vh; /* Ensures full-screen height */
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .gallery {
@@ -1165,20 +1178,20 @@ main {
 /* For tablets (between 768px and 1024px) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .logo {
-        max-width: 200px;
+        max-width: 280px; /* Increase logo size */
         height: auto;
     }
 
     .button-container {
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
     }
 
     .gradient-button {
         width: auto;
-        padding: 10px 15px;
-        font-size: 16px;
+        padding: 12px 18px;
+        font-size: 18px;
     }
 
     main {
