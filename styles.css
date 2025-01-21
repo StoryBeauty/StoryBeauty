@@ -1093,7 +1093,9 @@ main {
     body {
         background-size: cover;
         text-align: center;
-        padding: 10px;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
 
     header {
@@ -1105,25 +1107,39 @@ main {
 
     .logo-container {
         text-align: center;
+        width: 100%;
     }
 
     .logo {
-        max-width: 150px; /* Adjust logo size for mobile */
+        max-width: 180px; /* Adjust logo size for mobile */
         height: auto;
     }
 
     .button-container {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap; /* Ensure buttons stay in one row and wrap if necessary */
+        justify-content: center; /* Center buttons horizontally */
+        gap: 5px;
+        margin-top: 10px;
         width: 100%;
-        align-items: center;
     }
 
     .gradient-button {
-        width: 90%;
-        margin: 5px 0;
-        text-align: center;
+        flex: 1; /* Make buttons responsive */
+        max-width: 150px; /* Limit width per button */
+        padding: 8px 12px;
         font-size: 14px;
+        text-align: center;
+    }
+
+    main {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        min-height: 100vh; /* Ensures full-screen height */
+        overflow-x: hidden;
     }
 
     .gallery {
@@ -1153,9 +1169,23 @@ main {
         height: auto;
     }
 
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
     .gradient-button {
-        width: 75%;
+        width: auto;
+        padding: 10px 15px;
         font-size: 16px;
+    }
+
+    main {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        min-height: 100vh;
     }
 
     .gallery {
