@@ -1211,3 +1211,166 @@ main {
         height: auto;
     }
 }
+/* Ensure the header stacks logo and navbar properly */
+header {
+    display: flex;
+    flex-direction: column; /* Stacks logo and navbar vertically */
+    align-items: center; /* Centers everything horizontally */
+    width: 100%;
+    padding: 10px 0;
+}
+
+/* Keep the logo aligned to the left */
+.logo-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start; /* Aligns logo to the left */
+}
+
+/* Style the navbar */
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px; /* Adds spacing between logo and navbar */
+    background: transparent; /* Transparent background */
+    border-top: 2px solid rgba(212, 175, 55, 0.5); /* Semi-transparent gold line */
+}
+
+/* Ensure navbar links are centered */
+.nav-links {
+    display: flex;
+    justify-content: center; /* Centers the menu items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 20px; /* Space between items */
+}
+
+.nav-links a {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #CBA135; /* Gold color */
+    padding: 10px 15px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #D4AF37; /* Lighter gold on hover */
+    border-bottom: 2px solid #D4AF37; /* Underline effect */
+}
+
+/* Ensure all other content stays below */
+main {
+    margin-top: 20px; /* Adds spacing between navbar and content */
+}
+/* Style the navigation bar */
+.navbar {
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 10px; /* Adds spacing between logo and navbar */
+    border-top: 2px solid #D4AF37; /* Gold separator line */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+/* Center the navigation links */
+.nav-links {
+    display: flex;
+    justify-content: center; /* Centers the menu items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Spacing between navbar items */
+.nav-links li {
+    margin: 0 20px;
+}
+
+/* Styling for navigation buttons */
+.nav-links a {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #CBA135; /* Gold text color */
+    padding: 10px 15px;
+    transition: color 0.1s ease, border-bottom 0.1s ease;
+}
+
+/* Change color on hover */
+.nav-links a:hover {
+    color: #D4AF37; /* Slightly lighter gold on hover */
+    border-bottom: 2px solid #D4AF37; /* Gold underline effect */
+}
+/* Make header elements align properly */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Logo on the left, social media on the right */
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* Keep the logo aligned to the left */
+.logo-container {
+    flex-shrink: 0; /* Prevents logo from shrinking */
+}
+
+/* Adjust the logo size */
+.logo {
+    max-width: 380px; /* Adjust logo size */
+    height: auto;
+}
+
+/* Social media section inside the header */
+.social-media-header {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns text and icons to the right */
+}
+
+/* Style for 'Stay Connected' text */
+.social-media-header h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #CBA135; /* Gold color */
+    margin-bottom: 5px;
+}
+
+/* Align social buttons horizontally */
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Social media icons */
+.social-button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect */
+.social-button:hover {
+    transform: scale(1.1);
+}
+
+.service-description {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 0.8; /* Reduces spacing between description lines */
+    margin-top: 2px; /* Ensures consistent spacing between descriptions */
+}
+.services-list li {
+    margin-bottom: 20px; /* Keeps spacing between services */
+}

@@ -7,20 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <div class="header-container">
+        <!-- Logo on the left -->
         <div class="logo-container">
             <a href="index.html">
                 <img src="logo.png" alt="Business Logo" class="logo">
             </a>
         </div>
-        <div class="button-container">
-            <a href="index.html" class="gradient-button">Bookings</a>
-            <a href="gallery.html" class="gradient-button">Gallery</a>
-            <a href="index.html" class="gradient-button">About Us</a>
-            <a href="contact.html" class="gradient-button">Contact Us</a>
-        </div>
-    </header>
 
+        <!-- Social Media Section (Now inside the header) -->
+        <div class="social-media-header">
+            <h3 class="curvymax-font">Stay Connected !</h3>
+            <div class="social-buttons">
+                <a href="https://www.facebook.com/profile.php?id=61571671768852" target="_blank">
+                    <img src="media/facebook.png" alt="Facebook" class="social-button">
+                </a>
+                <a href="https://www.instagram.com/__storybeauty__/" target="_blank">
+                    <img src="media/instagram.png" alt="Instagram" class="social-button">
+                </a>
+                <a href="https://wa.me/447931155573" target="_blank">
+                    <img src="media/whatsapp.png" alt="WhatsApp" class="social-button">
+                </a>
+                <a href="https://maps.app.goo.gl/DxSnkGeABtTzDQPh8" target="_blank">
+                    <img src="media/google.png" alt="Google" class="social-button">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="bookings.html">Book now</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <main>
         <!-- Filter Buttons -->
         <section id="filter-buttons">
@@ -32,44 +54,122 @@
                 <button class="gradient-button">Luxury Skincare Treatments</button>
             </div>
         </section>
-    
-        <!-- Services Section -->
+</main>
+
         <section id="services">
             <div class="category-container massages-container" data-category="massages">
+                <main>
                 <h3 class="category-title curvymax-font">Massage Services:</h3>
                 <ul class="services-list play-font">
-                    <li>Swedish Massage - 60 min - $50</li>
-                    <li>Deep Tissue Massage - 60 min - $65</li>
-                    <li>Hot Stone Massage - 90 min - $80</li>
+                    <li> Facial massage - £40 (45 mins)
+                        <ul><li class="service-description">A relaxing massage designed to improve circulation and skin tone.</li></ul>
+                    </li>
+                    <li> Reflexotherapy (foot massage) - £40 (45 min)
+                        <ul><li class="service-description">A targeted therapy that stimulates pressure points in the feet to promote relaxation.</li></ul>
+                    </li>
+                    <li> Swedish massage - £55 (60 mins)
+                        <ul><li class="service-description">A classic massage technique using long strokes to relax muscles and improve circulation.</li></ul>
+                    </li>
+                    <li> Relaxing massage - £55 (60 mins)
+                        <ul><li class="service-description">Designed to relieve stress and promote deep relaxation.</li></ul>
+                    </li>
+                    <li> Therapeutic massage - £55 (60 mins)
+                        <ul><li class="service-description">A combination of techniques to alleviate chronic pain and muscle tension.</li></ul>
+                    </li>
+                    <li> Sports massage - £55 (60 mins)
+                        <ul><li class="service-description">Focused on enhancing athletic performance and aiding recovery.</li></ul>
+                    </li>
+                    <li> Anticellulite massage - £55 (60 mins)
+                        <ul><li class="service-description">Helps reduce cellulite appearance and improve skin elasticity.</li></ul>
+                    </li>
+                    <li> Prenatal / Postnatal massage - £55 (1 hour 10 mins)
+                        <ul><li class="service-description">Designed to support mothers during and after pregnancy.</li></ul>
+                    </li>
+                    <li> Body scrub & Relaxing massage - £75 (1 hour 10 mins)
+                        <ul><li class="service-description">A rejuvenating treatment combining exfoliation and massage.</li></ul>
+                    </li>
+                    <li> Deep tissue massage - £75 (1 hour 10 mins)
+                        <ul><li class="service-description">Targets deep muscle layers to relieve chronic pain.</li></ul>
+                    </li>
+                    <li> Lomi-Lomi massage - £75 (1 hour 10 mins)
+                        <ul><li class="service-description">A Hawaiian massage using rhythmic strokes for deep relaxation.</li></ul>
+                    </li>
+                    <li> Massage with Biblical oils (HOT) - £75 (1 hour 10 mins)
+                        <ul><li class="service-description">Uses hot oils for deep healing and relaxation.</li></ul>
+                    </li>
+                    <li> Cupping therapy (Glass or Silicone) - £75 (1 hour 10 mins)
+                        <ul><li class="service-description">A therapy using suction cups to relieve tension and improve circulation.</li></ul>
+                    </li>
+                    <li> Lymphatic drainage - £75 (1 hour 10 mins)
+                        <ul><li class="service-description">Stimulates the lymph system to detoxify the body.</li></ul>
+                    </li>
+                    <li> Aromatherapy & Lomi-Lomi massage - £85 (1 hour 15 mins)
+                        <ul><li class="service-description">A blend of aromatherapy oils and traditional Hawaiian techniques.</li></ul>
+                    </li>
                 </ul>
+                </main>
             </div>
             <div class="category-container waxing-container" data-category="waxing">
+                <main>
                 <h3 class="category-title curvymax-font">Waxing Services:</h3>
                 <ul class="services-list play-font">
-                    <li>Full Body Wax</li>
-                    <li>Brazilian Wax</li>
-                    <li>Eyebrow Waxing</li>
+                    <li> Upper Lip & Chin Wax Combo - £18.00 (20 mins)
+                        <ul><li class="service-description">Smooth and flawless! This combo removes unwanted hair from the upper lip and chin for a clean and polished look.</li></ul>
+                     </li>
+                    <li> Underarm Wax - £20.00 (20 mins)
+                        <ul><li class="service-description">Say goodbye to underarm hair! This gentle waxing service leaves your underarms silky smooth and irritation-free.</li></ul>
+                    </li>
+                    <li> Full Legs Wax - £40.00 (50 mins)
+                        <ul><li class="service-description">Perfectly smooth legs from thighs to toes! Enjoy hair-free, silky legs with this complete leg waxing treatment.</li></ul>
+                    </li>
+                    <li> Brazilian Wax - £40.00 (40 mins)
+                        <ul><li class="service-description">Achieve a smooth and polished finish with our full intimate waxing service. Customizable for your preferences.</li></ul>
+                    </li>
+                    <li> Full Body Wax - £78.00 (2 hours)
+                        <ul><li class="service-description">Experience silky smoothness from head to toe! This service covers full legs, bikini line, underarms, arms, back, and chest (optional areas can be skipped).</li></ul>
+                    </li>
                 </ul>
+                </main>
             </div>
             <div class="category-container lashes-container" data-category="lashes">
+                <main>
                 <h3 class="category-title curvymax-font">Flawless Lashes Menu:</h3>
                 <ul class="services-list play-font">
-                    <li>Classic Lash Extensions</li>
-                    <li>Volume Lash Extensions</li>
-                    <li>Lash Lift & Tint</li>
+                    <li> Lash Lift (Enhance your natural lashes, curl & define) - £35
+                        <ul><li class="service-description">Natural Volume (Lighter, softer look)</li></ul>
+                        <ul><li class="service-description">Full Set (90 mins) - £60</li></ul>
+                        <ul><li class="service-description">Refill (2-3 Weeks, 60 mins) - £47</li></ul>
+                    </li>
+                    <li> Volume Lash Extensions
+                        <ul><li class="service-description">Full, fluffy lashes for a glamorous look.</li></ul>
+                    </li>
+                    <li> Lash Lift & Tint
+                        <ul><li class="service-description">Enhances your natural lashes with a curl and tint.</li></ul>
+                    </li>
                 </ul>
+                </main>
             </div>
             <div class="category-container products-container" data-category="products">
+                <main>
                 <h3 class="category-title curvymax-font">Luxury Skincare Treatments:</h3>
                 <ul class="services-list play-font">
-                    <li>Organic Essential Oils</li>
-                    <li>High-Quality Waxing Kits</li>
-                    <li>Professional Lash Adhesives</li>
-                    <li>Hydrating Skincare Products</li>
+                    <li> Organic Essential Oils
+                        <ul><li class="service-description">High-quality oils for skin hydration and relaxation.</li></ul>
+                    </li>
+                    <li> High-Quality Waxing Kits
+                        <ul><li class="service-description">Premium waxing products for a smooth finish.</li></ul>
+                    </li>
+                    <li> Professional Lash Adhesives
+                        <ul><li class="service-description">Long-lasting adhesives for lash extensions.</li></ul>
+                    </li>
+                    <li> Hydrating Skincare Products
+                        <ul><li class="service-description">Moisturizing treatments for healthy, glowing skin.</li></ul>
+                    </li>
                 </ul>
+                </main>
             </div>
         </section>
-    </main>    
+        
 
     <footer>
         <p>&copy; 2025 Story Beauty. All rights reserved.</p>
