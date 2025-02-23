@@ -1374,3 +1374,59 @@ main {
 .services-list li {
     margin-bottom: 20px; /* Keeps spacing between services */
 }
+body {
+    overflow-x: hidden;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically on mobile */
+    align-items: center;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 10px 0; /* Adds spacing between menu items */
+}
+@media screen and (min-width: 768px) {
+    .navbar ul {
+        flex-direction: row; /* Horizontal layout on bigger screens */
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.logo {
+    max-width: 250px; /* Adjust size for mobile */
+    height: auto;
+}
+main, .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}
+.gradient-button {
+    width: 100%;
+    max-width: 180px; /* Adjusts button width on smaller screens */
+    padding: 12px 16px;
+    font-size: 16px;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust grid for smaller screens */
+        gap: 5px;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: auto;
+    }
+}
