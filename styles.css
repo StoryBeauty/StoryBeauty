@@ -1639,3 +1639,48 @@ main {
         margin-bottom: 8px;
     }
 }
+/* Ensure the top of the page is always visible on mobile */
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+/* Fix header visibility issue on mobile */
+.header-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-top: env(safe-area-inset-top); /* Adjust for phone's safe area */
+}
+
+/* Ensure the first section is fully visible */
+main:first-of-type {
+    padding-top: 80px; /* Pushes content down to ensure visibility */
+}
+
+/* Extra fix for mobile */
+@media screen and (max-width: 768px) {
+    body {
+        min-height: 100vh; /* Ensures the full height is used */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Ensures content starts from the top */
+    }
+
+    .header-container {
+        position: fixed; /* Keeps header visible */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        background-color: rgba(255, 255, 255, 0.9); /* Prevents text from blending */
+    }
+
+    main:first-of-type {
+        margin-top: 120px; /* Push down the first section so it's visible */
+    }
+}
