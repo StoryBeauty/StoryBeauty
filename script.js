@@ -77,7 +77,7 @@ function showCategory(category) {
         }
     });
 }
+
 window.onload = function() {
     window.scrollTo(0, 0);
 };
-
