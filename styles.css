@@ -1518,3 +1518,124 @@ main, .container {
         text-align: center;
     }
 }
+/* Align the header elements (logo on left, social media on right) */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Logo on left, social media on right */
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Ensure the logo stays aligned on the left */
+.logo-container {
+    flex-shrink: 0;
+}
+
+/* Adjust the logo size */
+.logo {
+    max-width: 380px; /* Adjust logo size */
+    height: auto;
+}
+
+/* Position the social media section exactly like the logo but on the right */
+.social-media-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); /* Align vertically to match the logo */
+    text-align: right;
+}
+
+/* Style for "Stay Connected" text */
+.social-media-header h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #CBA135; /* Gold color */
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* 2px drop shadow */
+}
+
+/* Align social buttons horizontally */
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Social media icons */
+.social-button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect */
+.social-button:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile & Tablet Fix */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .logo-container {
+        flex-shrink: 0;
+    }
+
+    .logo {
+        max-width: 220px; /* Smaller logo for mobile */
+        height: auto;
+    }
+
+    .social-media-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        position: static; /* Removes absolute positioning for mobile */
+        transform: none;
+        width: auto;
+        gap: 10px;
+    }
+
+    .social-buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    .social-button {
+        width: 32px; /* Adjust size for smaller screens */
+        height: 32px;
+    }
+
+    .social-media-header h3 {
+        font-size: 16px; /* Slightly smaller for mobile */
+        margin-right: 5px;
+    }
+}
+/* Increase spacing between main sections */
+main {
+    padding: 40px 0; /* Increase vertical spacing */
+    margin-bottom: 8px; /* Extra space below each section */
+}
+
+/* Ensure consistency on all screen sizes */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 30px 0; /* Slightly less padding on mobile */
+        margin-bottom: 8px;
+    }
+}
