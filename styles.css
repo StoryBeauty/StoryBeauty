@@ -743,6 +743,378 @@ section {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+/* Lightbox styling */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 5px;
+}
+
+/* Lightbox close button */
+.lightbox .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Lightbox navigation buttons */
+.lightbox .prev,
+.lightbox .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.lightbox .prev {
+    left: 10px;
+}
+
+.lightbox .next {
+    right: 10px;
+}
+
+/* Button container spacing */
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+.category-container {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+
+/* Show categories explicitly set to display: block */
+.category-container[data-category="massages"],
+.category-container[data-category="lashes"],
+.category-container[data-category="waxing"],
+.category-container[data-category="facial_treatments"],
+.category-container[data-category="products"] {
+    display: block; /* Make sure all are visible initially */
+}
+/* Grid image styling */
+.gallery-item {
+    width: 100%; /* Images scale with the grid cell */
+    height: 150px; /* Fixed height for uniform size */
+    object-fit: cover; /* Ensures images are cropped uniformly */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #CBA135; /* Reflective Gold for text */
+    background: url('media/header.png') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensures the image covers the screen */
+    text-align: center;
+    background-color: #1E1E1E; /* Backup deep black color for browsers without image support */
+}
+header {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative; /* To ensure layout remains stable */
+}
+/* Custom Fonts */
+@font-face {
+    font-family: 'LastChristmasPERSONALUSE-Regular';
+    src: url('fonts/LastChristmasPERSONALUSE-Regular.woff2') format('woff2'),
+         url('fonts/LastChristmasPERSONALUSE-Regular.woff') format('woff'),
+         url('fonts/LastChristmas_PERSONAL_USE_ONLY.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.gradient-button {
+    display: inline-flex; /* Ensures proper alignment for button content */
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Space inside the button */
+    border: none;
+    border-radius: 50px; /* Fully rounded corners */
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Keep the custom font */
+    font-weight: bold;
+    color: white; /* Button text color */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    position: relative; /* Required for box-shadow */
+    background: linear-gradient(45deg, #B39429, #D4AF37); /* Gold gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth interactions */
+}
+
+.gradient-button:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    background: linear-gradient(45deg, #D4AF37, #B39429); /* Reverse gradient on hover */
+}
+
+.gradient-button:active {
+    transform: translateY(0); /* Reset on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+/* Image Grid */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-item {
+    width: 200px; /* Set a fixed width for images */
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensures images are cropped correctly */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth effects */
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Shadow on hover */
+}
+
+/* Fullscreen Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+}
+
+.lightbox-controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.lightbox-controls .control {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.lightbox-controls .control:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Main Content */
+.social-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-button {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+}
+#social-media {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-button {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+}
+
+#social-media h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#social-media p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+.gradient-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Space inside the button */
+    border: none;
+    border-radius: 50px; /* Fully rounded corners */
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Keep the custom font */
+    font-weight: bold;
+    color: white; /* Button text color */
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    position: relative; /* Required for box-shadow */
+    margin: 10px; /* Add spacing between buttons */
+    background: linear-gradient(45deg, #D4A017, #FFD700); /* Adjusted gradient */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth interactions */
+}
+
+.gradient-button:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    background: linear-gradient(45deg, #FFD700, #D4A017); /* Reverse gradient on hover */
+}
+#social-media h3 {
+    font-family: 'PlaywriteAUSA-Regular', sans-serif; /* Keep the original font */
+    font-size: 32px; /* Make it larger */
+    line-height: 1.4; /* Adjust spacing for readability */
+    color: #CBA135; /* Restore the reflective gold color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+    margin-bottom: 15px; /* Add spacing below the heading */
+}
+#social-media h3.curvymax-font {
+    font-family: 'LastChristmasPERSONALUSE-Regular', sans-serif; /* Retain original font */
+    font-size: 36px; /* Slightly larger */
+    line-height: 1.2; /* Adjust spacing */
+    color: #CBA135; /* Reflective gold */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+    margin-bottom: 15px; /* Space below heading */
+}
+#social-media h3.curvymax-font {
+    letter-spacing: 1px; /* Subtle spacing between letters */
+}
+#social-media h3.curvymax-font {
+    line-height: 1.3; /* Increase for better readability */
+}
+/* Make each section smaller by reducing vertical padding and margin */
+section {
+    padding-top: 10px; /* Reduced space at the top */
+    padding-bottom: 10px; /* Reduced space at the bottom */
+    margin-top: 10px; /* Reduced space above the section */
+    margin-bottom: 10px; /* Reduced space below the section */
+    box-sizing: border-box; /* Ensure the padding doesn't affect section size */
+}
+
+/* Add spacing under the social media text */
+#social-media p {
+    margin-bottom: 15px; /* Adjust this value for smaller spacing */
+}
+
+/* Optional: Adjust header and footer spacing */
+header, footer {
+    padding: 10px 20px; /* Smaller padding for header/footer */
+}
+/* General section styling to reduce space */
+section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Category titles styling */
+.category-title {
+    margin-bottom: 10px;
+    font-size: 1.5rem; /* Adjust font size if necessary */
+    text-align: center;
+}
+
+/* Gallery styling */
+.gallery {
+    display: grid; /* Use grid layout for better responsiveness */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible columns */
+    gap: 10px; /* Space between images */
+    margin: 10px auto; /* Center the gallery */
+    width: 90%; /* Ensure the gallery fits well within the viewport */
+}
+
+/* Gallery items styling */
+.gallery-item {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 
 /* Lightbox styling */
 .lightbox {
@@ -823,7 +1195,6 @@ header {
     background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
     color: white;
     padding: 10px 0; /* Reduced vertical padding */
-    border-bottom: 3px solid #D4AF37; /* Adjusted border thickness */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
     position: relative;
 }
@@ -838,7 +1209,6 @@ header {
     background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
     color: white;
     padding: 10px 0; /* Reduced vertical padding */
-    border-bottom: 3px solid #D4AF37; /* Adjusted border thickness */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
     position: relative;
     display: flex;
@@ -857,26 +1227,8 @@ header {
 main {
     background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white to match header */
     border-radius: 15px; /* Optional: Rounded corners for consistency */
-    padding: 20px; /* Space inside the <main> */
+    padding: 8px; /* Space inside the <main> */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-}
-main {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border: 5px solid transparent;
-    border-image: url('media/floral-border.png') 30 stretch; /* Decorative floral border */
-}
-main {
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    background-image: url('media/floral-pattern.png'); /* Floral image URL */
-    background-size: contain; /* Scale the floral design */
-    background-repeat: no-repeat; /* Prevent repetition */
-    background-position: top right; /* Position floral detail */
 }
 /* Contact Form Styling */
 #contact-form {
@@ -1145,7 +1497,6 @@ main {
     main {
         width: 100%;
         max-width: 100%;
-        padding: 10px;
         box-sizing: border-box;
         margin: 0 auto;
         min-height: 100vh; /* Ensures full-screen height */
@@ -1195,13 +1546,6 @@ main {
         font-size: 18px;
     }
 
-    main {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px;
-        min-height: 100vh;
-    }
-
     .gallery {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
@@ -1228,15 +1572,6 @@ header {
     justify-content: flex-start; /* Aligns logo to the left */
 }
 
-/* Style the navbar */
-.navbar {
-    width: 100%;
-    padding: 10px 0;
-    margin-top: 10px; /* Adds spacing between logo and navbar */
-    background: transparent; /* Transparent background */
-    border-top: 2px solid rgba(212, 175, 55, 0.5); /* Semi-transparent gold line */
-}
-
 /* Ensure navbar links are centered */
 .nav-links {
     display: flex;
@@ -1257,26 +1592,27 @@ header {
     text-decoration: none;
     color: #CBA135; /* Gold color */
     padding: 10px 15px;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #D4AF37; /* Lighter gold on hover */
-    border-bottom: 2px solid #D4AF37; /* Underline effect */
 }
 
 /* Ensure all other content stays below */
 main {
-    margin-top: 20px; /* Adds spacing between navbar and content */
+    margin-top: 8px; /* Adds spacing between navbar and content */
 }
 /* Style the navigation bar */
 .navbar {
-    width: 100%;
-    padding: 15px 0;
-    margin-top: 10px; /* Adds spacing between logo and navbar */
-    border-top: 2px solid #D4AF37; /* Gold separator line */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    border-top: 2px solid #D4AF37; /* Gold bar at the top */
+    width: 100vw; /* Make sure it spans the full width of the viewport */
+    box-shadow: none;
 }
+
+
 
 /* Center the navigation links */
 .nav-links {
@@ -1300,13 +1636,11 @@ main {
     text-decoration: none;
     color: #CBA135; /* Gold text color */
     padding: 10px 15px;
-    transition: color 0.1s ease, border-bottom 0.1s ease;
 }
 
 /* Change color on hover */
 .nav-links a:hover {
     color: #D4AF37; /* Slightly lighter gold on hover */
-    border-bottom: 2px solid #D4AF37; /* Gold underline effect */
 }
 /* Make header elements align properly */
 .header-container {
@@ -1332,18 +1666,18 @@ main {
 
 /* Social media section inside the header */
 .social-media-header {
-    text-align: right;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Aligns text and icons to the right */
+    align-items: center;
 }
+
 
 /* Style for 'Stay Connected' text */
 .social-media-header h3 {
     font-size: 18px;
     font-weight: bold;
     color: #CBA135; /* Gold color */
-    margin-bottom: 5px;
 }
 
 /* Align social buttons horizontally */
@@ -1399,11 +1733,7 @@ main, .container {
     padding: 10px;
     box-sizing: border-box;
 }
-@media screen and (max-width: 768px) {
-    main {
-        padding: 10px;
-    }
-}
+
 .gradient-button {
     width: 100%;
     max-width: 180px; /* Adjusts button width on smaller screens */
@@ -1461,16 +1791,6 @@ main, .container {
         height: auto;
     }
 
-    .social-media-header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 10px; /* Reduce space between buttons */
-        flex-wrap: wrap;
-        margin-top: 5px;
-    }
-
     .social-buttons {
         display: flex;
         gap: 5px; /* Reduce space between icons */
@@ -1481,25 +1801,6 @@ main, .container {
     .social-button {
         width: 35px; /* Make social media icons smaller */
         height: 35px;
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: center;
-        padding: 5px;
-    }
-
-    .navbar ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        padding: 0;
-    }
-
-    .navbar ul li {
-        margin: 5px 0;
-        font-size: 14px;
     }
 
     .gradient-button {
@@ -1518,6 +1819,7 @@ main, .container {
         text-align: center;
     }
 }
+
 /* Align the header elements (logo on left, social media on right) */
 .header-container {
     display: flex;
@@ -1541,24 +1843,11 @@ main, .container {
     height: auto;
 }
 
-/* Position the social media section exactly like the logo but on the right */
-.social-media-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%); /* Align vertically to match the logo */
-    text-align: right;
-}
 
 /* Style for "Stay Connected" text */
 .social-media-header h3 {
-    font-size: 26px;
     font-weight: bold;
     color: #CBA135; /* Gold color */
-    margin-bottom: 5px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* 2px drop shadow */
 }
 
@@ -1579,68 +1868,78 @@ main, .container {
 /* Add hover effect */
 .social-button:hover {
     transform: scale(1.1);
-}
-
-/* Mobile & Tablet Fix */
-@media screen and (max-width: 768px) {
-    .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 15px;
-        width: 100%;
-    }
-
-    .logo-container {
-        flex-shrink: 0;
-    }
-
-    .logo {
-        max-width: 220px; /* Smaller logo for mobile */
-        height: auto;
-    }
-
-    .social-media-header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        position: static; /* Removes absolute positioning for mobile */
-        transform: none;
-        width: auto;
-        gap: 10px;
-    }
-
-    .social-buttons {
-        display: flex;
-        gap: 8px;
-    }
-
-    .social-button {
-        width: 32px; /* Adjust size for smaller screens */
-        height: 32px;
-    }
-
-    .social-media-header h3 {
-        font-size: 16px; /* Slightly smaller for mobile */
-        margin-right: 5px;
-    }
-}
-/* Increase spacing between main sections */
-main {
-    padding: 40px 0; /* Increase vertical spacing */
-    margin-bottom: 8px; /* Extra space below each section */
-}
-
-/* Ensure consistency on all screen sizes */
-@media screen and (max-width: 768px) {
-    main {
-        padding: 30px 0; /* Slightly less padding on mobile */
-        margin-bottom: 8px;
-    }
-}
+}  
 html, body {
     height: auto !important;
     overflow: auto !important;
     scroll-behavior: smooth;
+}
+.top-header {
+    background-color: white;
+    padding: 0 0; /* Reduce padding to bring it closer to navbar */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+body {
+    background: url('media/header.png') no-repeat center top;
+    background-size: cover;
+    background-position: center top 200px; /* Push background image down */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.navbar + * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px; /* Restores the rounded corners */
+    background: white; /* Ensure it has a visible background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+}
+main {
+    margin-bottom: 8px; /* Adds space below every <main> */
+}
+
+h2 {
+    margin-top: 10px; /* Reduce space above */
+    margin-bottom: 10px; /* Reduce space below */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+p {
+    margin-bottom: 8px; /* Reduce spacing between paragraphs */
+}
+.container {
+    padding: 10px; /* Reduce spacing inside the content box */
+}
+main {
+    padding: 10px 0; /* Reduce vertical padding */
+    margin: 10px auto; /* Reduce space between <main> sections */
+    max-width: 1200px;
+}
+main:first-of-type h2:first-child {
+    font-size: 42px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
