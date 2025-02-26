@@ -11,7 +11,6 @@ header {
     background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
     color: white;
     padding: 20px 0;
-    border-bottom: 5px solid #D4AF37; /* Reflective Gold accent */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     position: relative; /* To ensure layout remains stable */
 }
@@ -31,7 +30,6 @@ header {
 
 .curvymax-font {
     font-family: 'LastChristmasPERSONALUSE-Regular', sans-serif;
-    font-size: 78px; /* Adjust the value as needed */
 }
 
 @font-face {
@@ -236,58 +234,7 @@ main {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.3); /* Stronger shadow */
     background: linear-gradient(45deg, #FFD700, #D4A017); /* Reverse gradient on hover */
 }
-#homepage h2.curvymax-font {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Subtle shadow effect */
-}
-#homepage h2.play-font {
-    font-family: 'PlaywriteAUSA-Regular', sans-serif; /* Match the font */
-    font-size: 18px; /* Adjust font size for consistency */
-    line-height: 1.6; /* Set proper line spacing */
-    color: #555; /* Use the same subtle gray color */
-    text-shadow: none; /* Remove any shadow effect */
-    font-weight: 400; /* Set normal font weight */
-    margin: 20px 0; /* Add spacing for readability */
-}
-#social-media h3 {
-    font-family: 'PlaywriteAUSA-Regular', sans-serif; /* Keep the original font */
-    font-size: 32px; /* Make it larger */
-    line-height: 1.4; /* Adjust spacing for readability */
-    color: #CBA135; /* Restore the reflective gold color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
-    margin-bottom: 15px; /* Add spacing below the heading */
-}
-#social-media h3.curvymax-font {
-    font-family: 'LastChristmasPERSONALUSE-Regular', sans-serif; /* Retain original font */
-    font-size: 36px; /* Slightly larger */
-    line-height: 1.2; /* Adjust spacing */
-    color: #CBA135; /* Reflective gold */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
-    margin-bottom: 15px; /* Space below heading */
-}
-#social-media h3.curvymax-font {
-    letter-spacing: 1px; /* Subtle spacing between letters */
-}
-#social-media h3.curvymax-font {
-    line-height: 1.3; /* Increase for better readability */
-}
-/* Make each section smaller by reducing vertical padding and margin */
-section {
-    padding-top: 10px; /* Reduced space at the top */
-    padding-bottom: 10px; /* Reduced space at the bottom */
-    margin-top: 10px; /* Reduced space above the section */
-    margin-bottom: 10px; /* Reduced space below the section */
-    box-sizing: border-box; /* Ensure the padding doesn't affect section size */
-}
 
-/* Add spacing under the social media text */
-#social-media p {
-    margin-bottom: 15px; /* Adjust this value for smaller spacing */
-}
-
-/* Optional: Adjust header and footer spacing */
-header, footer {
-    padding: 10px 20px; /* Smaller padding for header/footer */
-}
 /* General section styling to reduce space */
 section {
     padding-top: 15px;
@@ -427,7 +374,6 @@ header {
     background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
     color: white;
     padding: 20px 0;
-    border-bottom: 5px solid #D4AF37; /* Reflective Gold accent */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     position: relative; /* To ensure layout remains stable */
 }
@@ -447,7 +393,7 @@ header {
 
 .curvymax-font {
     font-family: 'LastChristmasPERSONALUSE-Regular', sans-serif;
-    font-size: 78px; /* Adjust the value as needed */
+    font-size: 36px; /* Adjust the value as needed */
 }
 
 @font-face {
@@ -462,6 +408,7 @@ header {
 .play-font {
     font-family: 'PlaywriteAUSA-Regular', sans-serif;
 }
+
 .gradient-button {
     display: inline-flex; /* Ensures proper alignment for button content */
     align-items: center;
@@ -653,32 +600,31 @@ main {
     background: linear-gradient(45deg, #FFD700, #D4A017); /* Reverse gradient on hover */
 }
 #homepage h2.curvymax-font {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Subtle shadow effect */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Subtle shadow effect */
 }
 #homepage h2.play-font {
     font-family: 'PlaywriteAUSA-Regular', sans-serif; /* Match the font */
-    font-size: 18px; /* Adjust font size for consistency */
+    font-size: 16px; /* Adjust font size for consistency */
     line-height: 1.6; /* Set proper line spacing */
     color: #555; /* Use the same subtle gray color */
     text-shadow: none; /* Remove any shadow effect */
     font-weight: 400; /* Set normal font weight */
     margin: 20px 0; /* Add spacing for readability */
 }
+
 #social-media h3 {
     font-family: 'PlaywriteAUSA-Regular', sans-serif; /* Keep the original font */
     font-size: 32px; /* Make it larger */
     line-height: 1.4; /* Adjust spacing for readability */
     color: #CBA135; /* Restore the reflective gold color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
     margin-bottom: 15px; /* Add spacing below the heading */
 }
 #social-media h3.curvymax-font {
     font-family: 'LastChristmasPERSONALUSE-Regular', sans-serif; /* Retain original font */
-    font-size: 36px; /* Slightly larger */
-    line-height: 1.2; /* Adjust spacing */
     color: #CBA135; /* Reflective gold */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
-    margin-bottom: 15px; /* Space below heading */
+    margin-bottom: 2px; /* Space below heading */
 }
 #social-media h3.curvymax-font {
     letter-spacing: 1px; /* Subtle spacing between letters */
@@ -1046,18 +992,13 @@ header {
 }
 #social-media h3.curvymax-font {
     font-family: 'LastChristmasPERSONALUSE-Regular', sans-serif; /* Retain original font */
-    font-size: 36px; /* Slightly larger */
+    font-size: 32px; /* Slightly larger */
     line-height: 1.2; /* Adjust spacing */
     color: #CBA135; /* Reflective gold */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
     margin-bottom: 15px; /* Space below heading */
 }
-#social-media h3.curvymax-font {
-    letter-spacing: 1px; /* Subtle spacing between letters */
-}
-#social-media h3.curvymax-font {
-    line-height: 1.3; /* Increase for better readability */
-}
+
 /* Make each section smaller by reducing vertical padding and margin */
 section {
     padding-top: 10px; /* Reduced space at the top */
@@ -1315,7 +1256,7 @@ main {
 
 #contact-form-section p, #social-media p {
     font-family: 'PlaywriteAUSA-Regular', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     color: #555;
     text-shadow: none;
@@ -1441,120 +1382,6 @@ main {
     margin-bottom: 10px;
 }
 
-/* General Mobile Styles */
-@media screen and (max-width: 768px) {
-    body {
-        background-size: cover;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh; /* Full-screen height */
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-        width: 100%;
-    }
-
-    .logo-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .logo {
-        max-width: 250px; /* Increase logo size */
-        height: auto;
-    }
-
-    .button-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Center buttons horizontally */
-        gap: 10px;
-        margin-top: 20px;
-        width: 100%;
-    }
-
-    .gradient-button {
-        flex: 1; /* Make buttons responsive */
-        max-width: 180px; /* Limit width per button */
-        padding: 12px 16px;
-        font-size: 16px;
-        text-align: center;
-    }
-
-    main {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-        margin: 0 auto;
-        min-height: 100vh; /* Ensures full-screen height */
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust grid for smaller screens */
-        gap: 5px;
-    }
-
-    .gallery-item {
-        width: 100%;
-        height: auto;
-    }
-
-    .category-title {
-        font-size: 20px;
-    }
-
-    #contact-form {
-        width: 90%;
-        padding: 15px;
-    }
-}
-
-/* For tablets (between 768px and 1024px) */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .logo {
-        max-width: 280px; /* Increase logo size */
-        height: auto;
-    }
-
-    .button-container {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .gradient-button {
-        width: auto;
-        padding: 12px 18px;
-        font-size: 18px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    .gallery-item {
-        width: 100%;
-        height: auto;
-    }
-}
 /* Ensure the header stacks logo and navbar properly */
 header {
     display: flex;
@@ -1562,14 +1389,6 @@ header {
     align-items: center; /* Centers everything horizontally */
     width: 100%;
     padding: 10px 0;
-}
-
-/* Keep the logo aligned to the left */
-.logo-container {
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: flex-start; /* Aligns logo to the left */
 }
 
 /* Ensure navbar links are centered */
@@ -1581,27 +1400,10 @@ header {
     margin: 0;
 }
 
-.nav-links li {
-    margin: 0 20px; /* Space between items */
-}
-
-.nav-links a {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #CBA135; /* Gold color */
-    padding: 10px 15px;
-}
-
 .nav-links a:hover {
     color: #D4AF37; /* Lighter gold on hover */
 }
 
-/* Ensure all other content stays below */
-main {
-    margin-top: 8px; /* Adds spacing between navbar and content */
-}
 /* Style the navigation bar */
 .navbar {
     background-color: white;
@@ -1610,22 +1412,6 @@ main {
     border-top: 2px solid #D4AF37; /* Gold bar at the top */
     width: 100vw; /* Make sure it spans the full width of the viewport */
     box-shadow: none;
-}
-
-
-
-/* Center the navigation links */
-.nav-links {
-    display: flex;
-    justify-content: center; /* Centers the menu items */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Spacing between navbar items */
-.nav-links li {
-    margin: 0 20px;
 }
 
 /* Styling for navigation buttons */
@@ -1653,14 +1439,9 @@ main {
     padding: 10px 0;
 }
 
-/* Keep the logo aligned to the left */
-.logo-container {
-    flex-shrink: 0; /* Prevents logo from shrinking */
-}
-
 /* Adjust the logo size */
 .logo {
-    max-width: 380px; /* Adjust logo size */
+    max-width: 320px; /* Adjust logo size */
     height: auto;
 }
 
@@ -1670,14 +1451,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-
-/* Style for 'Stay Connected' text */
-.social-media-header h3 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #CBA135; /* Gold color */
 }
 
 /* Align social buttons horizontally */
@@ -1710,12 +1483,6 @@ main {
 }
 body {
     overflow-x: hidden;
-}
-.navbar ul {
-    display: flex;
-    flex-direction: column; /* Stack menu items vertically on mobile */
-    align-items: center;
-    padding: 0;
 }
 
 .navbar ul li {
@@ -1751,118 +1518,6 @@ main, .container {
         width: 100%;
         height: auto;
     }
-}
-/* Ensure full visibility of top section on mobile */
-.header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    width: 100%;
-    max-width: 100%;
-}
-
-/* Fix spacing for social media buttons and navigation */
-@media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-    }
-
-    .header-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .logo-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 5px;
-    }
-
-    .logo {
-        max-width: 180px; /* Ensure logo resizes properly */
-        height: auto;
-    }
-
-    .social-buttons {
-        display: flex;
-        gap: 5px; /* Reduce space between icons */
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .social-button {
-        width: 35px; /* Make social media icons smaller */
-        height: 35px;
-    }
-
-    .gradient-button {
-        max-width: 160px;
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-
-    /* Ensure content does not overflow */
-    main, .container {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 10px;
-        box-sizing: border-box;
-        text-align: center;
-    }
-}
-
-/* Align the header elements (logo on left, social media on right) */
-.header-container {
-    display: flex;
-    justify-content: space-between; /* Logo on left, social media on right */
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 0;
-    position: relative;
-}
-
-/* Ensure the logo stays aligned on the left */
-.logo-container {
-    flex-shrink: 0;
-}
-
-/* Adjust the logo size */
-.logo {
-    max-width: 380px; /* Adjust logo size */
-    height: auto;
-}
-
-
-/* Style for "Stay Connected" text */
-.social-media-header h3 {
-    font-weight: bold;
-    color: #CBA135; /* Gold color */
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* 2px drop shadow */
-}
-
-/* Align social buttons horizontally */
-.social-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-/* Social media icons */
-.social-button {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
 }
 
 /* Add hover effect */
@@ -1938,8 +1593,4 @@ main {
     padding: 10px 0; /* Reduce vertical padding */
     margin: 10px auto; /* Reduce space between <main> sections */
     max-width: 1200px;
-}
-main:first-of-type h2:first-child {
-    font-size: 42px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
