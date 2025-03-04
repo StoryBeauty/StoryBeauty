@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Story Beauty - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="media/favicon.png">
+</head>
+<body>
+    <div class="gold-bar">
+        <p id="sliding-text"></p>
+    </div>
+    <header class="top-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="logo.png" alt="Business Logo" class="logo">
+            </a>
+        </div>
+    
+      <!-- Social Media Section (Now inside the header) -->
+            <div class="social-buttons">
+                <a href="https://story-beauty.booksy.com" target="_blank">
+                    <img src="media/booksy.png" alt="Booksy" class="social-button">
+                </a>  
+                <a href="https://maps.app.goo.gl/DxSnkGeABtTzDQPh8" target="_blank">
+                    <img src="media/google.png" alt="Google" class="social-button">
+                </a>
+                <a href="https://wa.me/447931155573" target="_blank">
+                    <img src="media/whatsapp.png" alt="WhatsApp" class="social-button">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61571671768852" target="_blank">
+                    <img src="media/facebook.png" alt="Facebook" class="social-button">
+                </a>
+                <a href="https://www.instagram.com/__storybeauty__/" target="_blank">
+                    <img src="media/instagram.png" alt="Instagram" class="social-button">
+                </a>
+            </div>
+        </div>
+    
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html"><img src="media/icons/home.png" class="nav-icon"> Home</a></li>
+                <li><a href="services.html"><img src="media/icons/book.png" class="nav-icon"> Book Now</a></li>
+                <li><a href="gallery.html"><img src="media/icons/gallery.png" class="nav-icon"> Gallery</a></li>
+                <li><a href="contact.html"><img src="media/icons/contact.png" class="nav-icon"> Contact Us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+<main>
+        <!-- Gallery Section -->
+        <section id="portfolio">
+            <div class="category-container massages-container" data-category="massages">
+                <h3 class="category-title">Massages:</h3>
+                <div class="gallery massages-gallery">
+                    <img src="media/massages/massage1.png" alt="Massage 1" class="gallery-item">
+                    <img src="media/massages/massage2.png" alt="Massage 2" class="gallery-item">
+                    <img src="media/massages/massage3.png" alt="Massage 3" class="gallery-item">
+                    <img src="media/massages/massage4.png" alt="Massage 4" class="gallery-item">
+                    <img src="media/massages/massage5.png" alt="Massage 5" class="gallery-item">
+                </div>
+            </div>
+            <div class="category-container waxing-container" data-category="waxing">
+                <h3 class="category-title">Waxing:</h3>
+                <div class="gallery waxing-gallery">
+                    <img src="media/waxing/waxing4.png" alt="Waxing 4" class="gallery-item">
+                    <img src="media/waxing/waxing5.png" alt="Waxing 5" class="gallery-item">
+                    <img src="media/waxing/waxing1.png" alt="Waxing 1" class="gallery-item">
+                    <img src="media/waxing/waxing2.png" alt="Waxing 2" class="gallery-item">
+                    <img src="media/waxing/waxing3.png" alt="Waxing 3" class="gallery-item">
+                </div>
+            </div>
+            <div class="category-container lashes-container" data-category="lashes">
+                <h3 class="category-title">Lashes:</h3>
+                <div class="gallery lashes-gallery">
+                    <img src="media/lashes/lashes1.png" alt="Lash 1" class="gallery-item">
+                    <img src="media/lashes/lashes2.png" alt="Lash 2" class="gallery-item">
+                    <img src="media/lashes/lashes3.png" alt="Lash 3" class="gallery-item">
+                    <img src="media/lashes/lashes4.png" alt="Lash 4" class="gallery-item">
+                    <img src="media/lashes/lashes5.png" alt="Lash 5" class="gallery-item">
+                </div>
+            </div>
+            <div class="category-container products-container" data-category="products">
+                <h3 class="category-title">Products we use:</h3>
+                <div class="gallery products-gallery">
+                    <img src="media/products/product1.png" alt="Product 1" class="gallery-item">
+                    <img src="media/products/product2.png" alt="Product 2" class="gallery-item">
+                    <img src="media/products/product3.png" alt="Product 3" class="gallery-item">
+                    <img src="media/products/product4.png" alt="Product 4" class="gallery-item">
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Lightbox for Fullscreen View -->
+    <div class="lightbox">
+    <button class="close">&times;</button>
+    <button class="prev">&#10094;</button>
+    <img src="" alt="Fullscreen Image">
+    <button class="next">&#10095;</button>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Story Beauty. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="fullscreenmode.js"></script>
+    <script src="goldbar.js"></script>
+    <script src="cookies.js"></script>
+</body>
+</html>
